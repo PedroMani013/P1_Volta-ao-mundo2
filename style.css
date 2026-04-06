@@ -3,6 +3,20 @@
     padding: 0;
 }
 
+html, body {
+    height: 100%;
+}
+
+.tudo {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    background-color: #CE1126;
+}
+
 header h1 {
     font-size: 28px;
     font-weight: 500;
@@ -45,4 +59,51 @@ header h1 {
 
 .nav-link:hover::after {
     width: 100%;
+}
+
+footer{
+    background-color: #000;
+    color: #FFF;
+    font-size: 2vh;
+}
+
+main {
+    position: relative;
+    flex: 1; /* faz ocupar o espaço disponível */
+
+    background-image: url(assets/imgs/bg_index.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+main::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+}
+
+main > * {
+    position: relative;
+}
+#saber-mais {
+    background-color: #FFC70F;
+    border: none;
+    transition: all 0.3s ease;
+    border-radius: 20px;
+}
+
+#saber-mais:hover {
+    background-color: #e0ac00; /* tom mais escuro */
+    transform: scale(1.05);   /* leve animação */
 }
