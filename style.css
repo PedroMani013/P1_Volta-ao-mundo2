@@ -67,7 +67,7 @@ footer{
     font-size: 2vh;
 }
 
-main {
+#home {
     position: relative;
     flex: 1; /* faz ocupar o espaço disponível */
 
@@ -83,7 +83,7 @@ main {
     text-align: center;
 }
 
-main::before {
+#home::before {
     content: "";
     position: absolute;
     top: 0;
@@ -93,9 +93,10 @@ main::before {
     background: rgba(0,0,0,0.4);
 }
 
-main > * {
+#home > * {
     position: relative;
 }
+
 #saber-mais {
     background-color: #FFC70F;
     border: none;
@@ -106,4 +107,8 @@ main > * {
 #saber-mais:hover {
     background-color: #e0ac00; /* tom mais escuro */
     transform: scale(1.05);   /* leve animação */
+}
+
+hr {
+    border-top: 3px solid; /* vermelho bootstrap */
 }
