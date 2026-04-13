@@ -112,3 +112,13 @@ footer{
 hr {
     border-top: 3px solid; /* vermelho bootstrap */
 }
+
+table{
+    border: 2px solid #CCC;
+}
+
+thead{
+    background-color: #CE1126;
+    color: #FFF;
+}
+
