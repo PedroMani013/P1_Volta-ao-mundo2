@@ -115,6 +115,7 @@ hr {
 
 table{
     border: 2px solid #CCC;
+    font-size: 1.2rem;
 }
 
 thead{
@@ -122,3 +123,6 @@ thead{
     color: #FFF;
 }
 
+#infotext p {
+    font-size: 1.1rem;
+}
