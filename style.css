@@ -126,3 +126,8 @@ thead{
 #infotext p {
     font-size: 1.1rem;
 }
+
+.card-img-top{
+    width: 100%;
+    height: 40vh;
+}
