@@ -102,7 +102,14 @@
                 </div>
 
             </div>
-
+            <button 
+                class="btn btn-danger rounded-circle shadow"
+                data-toggle="modal" 
+                data-target="#qrModal"
+                id="qr-btn">
+                
+                📱
+            </button>
 
         </main>
 
@@ -113,6 +120,19 @@
                 </div>
             </div>
         </footer>
+        <div class="modal fade" id="qrModal" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content text-center p-3">
+
+                    <span class="mb-3">
+                        Escaneie o QR-code para abrir o site em seu celular!
+                    </span>
+
+                    <img src="assets/imgs/qrcode.png" class="img-fluid" alt="QR Code">
+
+                </div>
+            </div>
+        </div>
 
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
