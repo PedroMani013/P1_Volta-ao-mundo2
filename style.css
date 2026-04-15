@@ -141,3 +141,36 @@ thead{
     height: 60px;
     font-size: 24px;
 }
+
+/* Cabeçalho vermelho */
+.card-header {
+    background-color: #CE1126;
+}
+
+/* Botão do accordion */
+.card-header .btn {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Hover */
+.card-header .btn:hover {
+    color: #f1f1f1;
+    text-decoration: none;
+}
+
+/* Remove borda feia do botão */
+.card-header .btn:focus {
+    box-shadow: none;
+}
+
+/* Conteúdo branco */
+.card-body {
+    background-color: #fff;
+    color: #000;
+}
+
+#accordionbutton {
+    font-size: 1.5rem
+}

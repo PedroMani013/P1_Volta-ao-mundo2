@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Volta ao mundo: Egito</title>
     <link rel="shortcut icon" href="assets/imgs/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="tudo">
         <header>
@@ -40,19 +43,158 @@
         </header>
 
         <main class="d-flex flex-column align-items-center justify-content-center text-center">
+            <div class="container">
+                <h2 class="display-4 mt-5 mb-3">História do Egito</h2>
 
-            <h2 class="display-4 mt-5 mb-3">História do Egito</h2>
+                <hr class="w-100 mb-5 border-dark">
 
-            <hr class="w-50 mb-5 border-dark">
+                <div class="row align-items-center m-5">
+                    <div id="infotext" class="text-left">
+                        <p>A história do Egito é uma das mais antigas e influentes da humanidade, tendo início por volta
+                            de 3.100 a.C., com a unificação do Alto e do Baixo Egito. Desenvolvida às margens do Rio
+                            Nilo, essa civilização prosperou graças às cheias do rio, que garantiam terras férteis para
+                            a agricultura. Ao longo dos séculos, os egípcios construíram uma sociedade altamente
+                            organizada, com avanços significativos na escrita, na medicina e na engenharia. Os faraós
+                            governavam como líderes absolutos, sendo considerados representantes dos deuses na Terra.
+                            Durante o Antigo, Médio e Novo Império, foram erguidas grandes obras, como templos e
+                            pirâmides, que até hoje impressionam o mundo. Com o passar do tempo, o Egito foi conquistado
+                            por diferentes povos, incluindo persas e macedônios, sob o comando de Alexandre, o Grande.
+                            Após sua morte, o território ficou sob domínio da dinastia ptolomaica, encerrada com o
+                            governo de Cleópatra. Com sua queda, o Egito passou a integrar o Império Romano, iniciando
+                            uma nova fase de sua história. Séculos depois, foi incorporado ao mundo islâmico e, já na
+                            era moderna, tornou-se um país independente. Hoje, o Egito mantém viva sua herança histórica
+                            enquanto se desenvolve como uma importante nação contemporânea.</p>
+                    </div>
 
-            <button 
-                class="btn btn-danger rounded-circle shadow"
-                data-toggle="modal" 
-                data-target="#qrModal"
-                id="qr-btn">
-                
-                📱
-            </button>
+                </div>
+                <div class="accordion text-left mb-5" id="accordionExample">
+
+                    <!-- ITEM 1 -->
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h5 class="m-0">
+                                <button id="accordionbutton" class="btn btn-link text-white w-100 text-left"
+                                    type="button" data-toggle="collapse" data-target="#collapseOne">
+                                    Cleópatra: A Última Rainha do Egito
+                                </button>
+                            </h5>
+                        </div>
+
+                        <div id="collapseOne" class="collapse" data-parent="#accordionExample">
+                            <div class="card-body m-4">
+                                <p>Cleópatra VII foi a última rainha do Egito e uma das figuras mais marcantes da
+                                    história antiga. Pertencente à dinastia ptolomaica, de origem grega, ela governou em
+                                    um período de intensas disputas políticas e ameaças externas. Diferente de muitos
+                                    governantes da época, Cleópatra era conhecida por sua inteligência, habilidade
+                                    diplomática e domínio de vários idiomas, o que facilitava suas negociações. Para
+                                    manter o poder e a independência do Egito, ela formou alianças estratégicas com
+                                    importantes líderes romanos, como Júlio César e Marco Antônio. No entanto, após
+                                    conflitos com Otaviano, seu reino foi derrotado. Diante da perda de poder e da
+                                    iminente captura, Cleópatra teria tirado a própria vida, segundo relatos históricos.
+                                    Sua morte marcou o fim da independência egípcia e o início do domínio romano. Ao
+                                    longo dos séculos, sua imagem foi retratada de diversas formas, tornando-se símbolo
+                                    de poder, beleza e inteligência. Até hoje, Cleópatra permanece como uma das
+                                    personagens mais estudadas e fascinantes da história.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ITEM 2 -->
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h5 class="m-0">
+                                <button id="accordionbutton" class="btn btn-link text-white w-100 text-left"
+                                    type="button" data-toggle="collapse" data-target="#collapseTwo">
+                                    As Pragas do Egito e Seu Significado Histórico e Religioso
+                                </button>
+                            </h5>
+                        </div>
+
+                        <div id="collapseTwo" class="collapse" data-parent="#accordionExample">
+                            <div class="card-body m-4">
+                                <p>As chamadas pragas do Egito são narrativas presentes em textos religiosos,
+                                    especialmente na tradição bíblica, e descrevem uma série de acontecimentos que
+                                    teriam atingido o país como forma de punição divina. Segundo essa tradição, esses
+                                    eventos ocorreram durante um conflito entre o líder hebreu Moisés e o faraó egípcio,
+                                    que se recusava a libertar um povo escravizado. Entre as pragas descritas estão
+                                    fenômenos como a transformação das águas em sangue, invasões de rãs e insetos,
+                                    doenças, escuridão e outros acontecimentos extremos. Essas narrativas possuem forte
+                                    significado simbólico, representando a luta entre poder humano e vontade divina. Ao
+                                    longo do tempo, estudiosos tentaram interpretar esses eventos de diferentes formas,
+                                    incluindo explicações naturais para alguns dos fenômenos descritos. Ainda assim, seu
+                                    principal valor está no contexto religioso e cultural, sendo uma das histórias mais
+                                    conhecidas do mundo. Independentemente da interpretação, as pragas continuam
+                                    influenciando tradições, crenças e estudos históricos até os dias atuais.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ITEM 3 -->
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <h5 class="m-0">
+                                <button id="accordionbutton" class="btn btn-link text-white w-100 text-left"
+                                    type="button" data-toggle="collapse" data-target="#collapseThree">
+                                    Mistérios e Teorias sobre as Pirâmides de Gizé
+                                </button>
+                            </h5>
+                        </div>
+
+                        <div id="collapseThree" class="collapse" data-parent="#accordionExample">
+                            <div class="card-body m-4">
+                                <p>As pirâmides do Egito, especialmente as de Gizé, sempre despertaram curiosidade e
+                                    fascínio, o que levou ao surgimento de diversas teorias conspiratórias ao longo do
+                                    tempo. Algumas dessas teorias sugerem que sua construção teria envolvido
+                                    conhecimentos avançados demais para a época ou até mesmo a participação de
+                                    civilizações extraterrestres. Outros acreditam na existência de tecnologias perdidas
+                                    ou segredos ocultos nas estruturas. Essas ideias ganharam popularidade devido à
+                                    precisão das construções, ao tamanho monumental das pirâmides e ao alinhamento com
+                                    elementos astronômicos. No entanto, estudos arqueológicos e históricos apresentam
+                                    explicações baseadas em evidências concretas, como o uso de ferramentas simples,
+                                    organização de mão de obra e técnicas de engenharia adaptadas à época. Escavações e
+                                    registros indicam que milhares de trabalhadores participaram dessas construções de
+                                    forma planejada. Apesar disso, as teorias conspiratórias continuam populares,
+                                    alimentando documentários, livros e discussões. Esse interesse mostra como as
+                                    pirâmides ainda exercem grande impacto na imaginação das pessoas. No fim, elas
+                                    permanecem como um dos maiores legados da civilização egípcia.</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ITEM 4 -->
+                    <div class="card">
+                        <div class="card-header" id="headingFour">
+                            <h5 class="m-0">
+                                <button id="accordionbutton" class="btn btn-link text-white w-100 text-left"
+                                    type="button" data-toggle="collapse" data-target="#collapseFour">
+                                    A Mitologia e os Deuses do Antigo Egito
+                                </button>
+                            </h5>
+                        </div>
+
+                        <div id="collapseFour" class="collapse" data-parent="#accordionExample">
+                            <div class="card-body m-4">
+                                <p>A religião do Egito antigo era marcada pelo politeísmo, ou seja, pela crença em
+                                    diversos deuses que representavam forças da natureza, aspectos da vida e conceitos
+                                    espirituais. Esses deuses eram fundamentais para a organização da sociedade e
+                                    influenciavam diretamente a política e o cotidiano. Entre os mais importantes estava
+                                    Rá, considerado o criador e associado ao sol, além de Osíris, ligado ao mundo dos
+                                    mortos e à vida após a morte, e Ísis, símbolo de proteção e magia. Os deuses eram
+                                    frequentemente representados com corpos humanos e cabeças de animais, cada um com um
+                                    significado específico. Os egípcios realizavam rituais, oferendas e construíam
+                                    templos em homenagem a essas divindades. A crença na vida após a morte era um dos
+                                    pilares dessa religião, influenciando práticas como a mumificação. Além disso, os
+                                    faraós eram vistos como intermediários entre os deuses e os humanos. Essa rica
+                                    mitologia continua sendo estudada e admirada até hoje, exercendo grande influência
+                                    cultural e histórica.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
         </main>
 
         <footer>
@@ -77,8 +219,15 @@
         </div>
 
     </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
