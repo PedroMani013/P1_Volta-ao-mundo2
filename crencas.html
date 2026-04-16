@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Volta ao mundo: Egito</title>
     <link rel="shortcut icon" href="assets/imgs/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="tudo">
         <header>
@@ -29,7 +32,16 @@
                                 <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                                 <li class="nav-item"><a class="nav-link" href="info.html">Info</a></li>
                                 <li class="nav-item"><a class="nav-link" href="turismo.html">Turismo</a></li>
-                                <li class="nav-item"><a class="nav-link" href="cultura.html">Cultura</a></li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="culturaDropdown" role="button"
+                                        data-toggle="dropdown">
+                                        Cultura
+                                    </a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="crencas.html">Crenças</a>
+                                        <a class="dropdown-item" href="pratos.html">Pratos Típicos</a>
+                                    </div>
+                                </li>
                                 <li class="nav-item"><a class="nav-link" href="historia.html">História</a></li>
                             </ul>
                         </div>
@@ -40,16 +52,17 @@
         </header>
 
         <main class="d-flex flex-column align-items-center justify-content-center text-center">
+            <div class="container">
+                <h2 class="display-4 mt-5 mb-3">Crenças Do Povo Egípcio</h2>
 
-            <h2 class="display-4 mt-5 mb-3">Cultura Local</h2>
+                <hr class="w-100 mb-5 border-dark">
 
-            <hr class="w-50 mb-5 border-dark">
-            <button 
-                class="btn btn-danger rounded-circle shadow"
-                data-toggle="modal" 
-                data-target="#qrModal"
-                id="qr-btn">
-                
+                <div class="row align-items-center m-5">
+
+                </div>
+            </div>
+            <button class="btn btn-danger rounded-circle shadow" data-toggle="modal" data-target="#qrModal" id="qr-btn">
+
                 📱
             </button>
         </main>
@@ -61,6 +74,7 @@
                 </div>
             </div>
         </footer>
+
         <div class="modal fade" id="qrModal" tabindex="-1">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content text-center p-3">
@@ -74,10 +88,16 @@
                 </div>
             </div>
         </div>
-
     </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

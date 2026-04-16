@@ -13,13 +13,20 @@ html, body {
     flex-direction: column;
 }
 
+/* HEADER */
 header{
     background-color: #CE1126;
+    position: relative; /* IMPORTANTE */
 }
 
 header h1 {
     font-size: 28px;
     font-weight: 500;
+}
+
+/* NAVBAR */
+.navbar {
+    position: static; /* evita conflito com o absolute */
 }
 
 .navbar-nav .nav-link {
@@ -38,10 +45,7 @@ header h1 {
     box-shadow: none;
 }
 
-.nav-link {
-    position: relative;
-}
-
+/* LINHA ANIMADA */
 .nav-link {
     position: relative;
 }
@@ -61,12 +65,57 @@ header h1 {
     width: 100%;
 }
 
+.nav-link::after {
+    width: 0;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* impede o dropdown de ficar com a linha ativa */
+.nav-item.dropdown.show .nav-link::after {
+    width: 0;
+}
+
+/* DROPDOWN */
+.dropdown-menu {
+    background-color: #CE1126;
+    border: none;
+}
+
+.dropdown-item {
+    color: white;
+    font-weight: 600;
+}
+
+.dropdown-item:hover {
+    background-color: #a50d1f;
+    color: white;
+}
+
+/* MENU MOBILE FORA DO HEADER */
+@media (max-width: 991px) {
+    .navbar-collapse {
+        position: absolute;
+        top: 100%; /* aparece abaixo do header */
+        left: 0;
+        width: 100%;
+        background-color: #CE1126;
+        z-index: 9999;
+        padding: 15px 0;
+        text-align: right;
+    }
+}
+
+/* FOOTER */
 footer{
     background-color: #000;
     color: #FFF;
     font-size: 2vh;
 }
 
+/* HOME */
 #home {
     position: relative;
     flex: 1;
@@ -97,6 +146,7 @@ footer{
     position: relative;
 }
 
+/* BOTÃO */
 #saber-mais {
     background-color: #FFC70F;
     border: none;
@@ -105,14 +155,16 @@ footer{
 }
 
 #saber-mais:hover {
-    background-color: #e0ac00; /* tom mais escuro */
-    transform: scale(1.05);   /* leve animação */
+    background-color: #e0ac00;
+    transform: scale(1.05);
 }
 
+/* HR */
 hr {
-    border-top: 3px solid; /* vermelho bootstrap */
+    border-top: 3px solid;
 }
 
+/* TABELA */
 table{
     border: 2px solid #CCC;
     font-size: 1.2rem;
@@ -123,15 +175,18 @@ thead{
     color: #FFF;
 }
 
+/* TEXTO */
 #infotext p {
     font-size: 1.1rem;
 }
 
+/* CARD */
 .card-img-top{
     width: 100%;
     height: 40vh;
 }
 
+/* BOTÃO FIXO */
 #qr-btn {
     position: fixed;
     bottom: 20px;
@@ -142,30 +197,26 @@ thead{
     font-size: 24px;
 }
 
-/* Cabeçalho vermelho */
+/* ACCORDION */
 .card-header {
     background-color: #CE1126;
 }
 
-/* Botão do accordion */
 .card-header .btn {
     color: white;
     text-decoration: none;
     font-weight: 600;
 }
 
-/* Hover */
 .card-header .btn:hover {
     color: #f1f1f1;
     text-decoration: none;
 }
 
-/* Remove borda feia do botão */
 .card-header .btn:focus {
     box-shadow: none;
 }
 
-/* Conteúdo branco */
 .card-body {
     background-color: #fff;
     color: #000;
@@ -174,6 +225,7 @@ thead{
 #accordionbutton {
     white-space: normal;
     word-break: break-word;
+    font-size: 1.5rem;
 }
 
 #imageaccordion {
@@ -183,13 +235,15 @@ thead{
     border: 1rem double peru;
 }
 
-#accordionbutton {
-    font-size: 1.5rem;
-}
-
-/* Mobile */
+/* MOBILE */
 @media (max-width: 768px) {
     #accordionbutton {
         font-size: 1rem;
     }
+}
+
+.pratos {
+    width: 100%;
+    height: 50vh;
+    border: 1rem double peru;
 }
