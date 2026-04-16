@@ -244,6 +244,11 @@ thead{
 
 .pratos {
     width: 100%;
-    height: 50vh;
+    height: auto;
+    max-height: 40vh;
     border: 1rem double peru;
+}
+
+.linhapratos {
+    color: peru
 }
