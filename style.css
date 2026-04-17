@@ -1,4 +1,6 @@
-*{
+/* RESET & BASE */
+
+* {
     margin: 0;
     padding: 0;
 }
@@ -13,8 +15,10 @@ html, body {
     flex-direction: column;
 }
 
+
 /* HEADER */
-header{
+
+header {
     background-color: #CE1126;
     position: relative; /* IMPORTANTE */
 }
@@ -24,7 +28,9 @@ header h1 {
     font-weight: 500;
 }
 
+
 /* NAVBAR */
+
 .navbar {
     position: static; /* evita conflito com o absolute */
 }
@@ -45,7 +51,8 @@ header h1 {
     box-shadow: none;
 }
 
-/* LINHA ANIMADA */
+/* Linha animada */
+
 .nav-link {
     position: relative;
 }
@@ -65,20 +72,14 @@ header h1 {
     width: 100%;
 }
 
-.nav-link::after {
-    width: 0;
-}
+/* Impede o dropdown de ficar com a linha ativa */
 
-.nav-link:hover::after {
-    width: 100%;
-}
-
-/* impede o dropdown de ficar com a linha ativa */
 .nav-item.dropdown.show .nav-link::after {
     width: 0;
 }
 
-/* DROPDOWN */
+/* Dropdown */
+
 .dropdown-menu {
     background-color: #CE1126;
     border: none;
@@ -94,7 +95,8 @@ header h1 {
     color: white;
 }
 
-/* MENU MOBILE FORA DO HEADER */
+/* Menu mobile fora do header */
+
 @media (max-width: 991px) {
     .navbar-collapse {
         position: absolute;
@@ -108,14 +110,50 @@ header h1 {
     }
 }
 
+
 /* FOOTER */
-footer{
+
+footer {
     background-color: #000;
     color: #FFF;
     font-size: 2vh;
 }
 
-/* HOME */
+
+/* COMPONENTES GLOBAIS */
+
+/* HR */
+hr {
+    border-top: 3px solid;
+}
+
+/* Botão fixo (QR Code) */
+
+#qr-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+}
+
+/* Cards (imagem no topo) */
+
+.card-img-top {
+    width: 100%;
+    height: 40vh;
+}
+
+/* Texto de conteúdo */
+
+#infotext p {
+    font-size: 1.1rem;
+}
+
+/* INDEX (HOME) */
+
 #home {
     position: relative;
     flex: 1;
@@ -139,14 +177,15 @@ footer{
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.4);
+    background: rgba(0, 0, 0, 0.4);
 }
 
 #home > * {
     position: relative;
 }
 
-/* BOTÃO */
+/* Botão "Saber mais" */
+
 #saber-mais {
     background-color: #FFC70F;
     border: none;
@@ -159,45 +198,23 @@ footer{
     transform: scale(1.05);
 }
 
-/* HR */
-hr {
-    border-top: 3px solid;
-}
 
-/* TABELA */
-table{
+/* INFO */
+
+/* Tabela de informações gerais */
+
+table {
     border: 2px solid #CCC;
     font-size: 1.2rem;
 }
 
-thead{
+thead {
     background-color: #CE1126;
     color: #FFF;
 }
 
-/* TEXTO */
-#infotext p {
-    font-size: 1.1rem;
-}
+/* HISTÓRIA (accordion) */
 
-/* CARD */
-.card-img-top{
-    width: 100%;
-    height: 40vh;
-}
-
-/* BOTÃO FIXO */
-#qr-btn {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 999;
-    width: 60px;
-    height: 60px;
-    font-size: 24px;
-}
-
-/* ACCORDION */
 .card-header {
     background-color: #CE1126;
 }
@@ -235,12 +252,13 @@ thead{
     border: 1rem double peru;
 }
 
-/* MOBILE */
 @media (max-width: 768px) {
     #accordionbutton {
         font-size: 1rem;
     }
 }
+
+/* PRATOS TÍPICOS */
 
 .pratos {
     width: 100%;
@@ -250,5 +268,5 @@ thead{
 }
 
 .linhapratos {
-    color: peru
+    color: peru;
 }
