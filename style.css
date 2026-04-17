@@ -270,3 +270,10 @@ thead {
 .linhapratos {
     color: peru;
 }
+
+/* CRENÇAS */
+
+.deuses .card img {
+    width: 20vh;
+    margin: 0 auto;
+}
